@@ -12,10 +12,10 @@ export const permissions: GadgetPermissions = {
     "shopify-app-users": {
       storageKey: "Role-Shopify-App",
       models: {
-        monthlyProductSelection: {
+        monthlyCollectionSelection: {
           read: {
             filter:
-              "accessControl/filters/monthlyProductSelection.gelly",
+              "accessControl/filters/monthlyCollectionSelection.gelly",
           },
         },
         shopifyGdprRequest: {
@@ -53,9 +53,8 @@ export const permissions: GadgetPermissions = {
       },
       actions: {
         alignSubscriptionSkus: true,
-        clearMonthlyProduct: true,
-        getCurrentMonthSkus: true,
-        setMonthlyProduct: true,
+        clearMonthlyCollection: true,
+        setMonthlyCollection: true,
       },
     },
     unauthenticated: {

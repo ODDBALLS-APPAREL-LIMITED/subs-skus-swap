@@ -15,8 +15,8 @@ export const run: ActionRun = async ({ params, api, connections, logger }) => {
     throw new Error("month is required");
   }
 
-  logger.info({ shopId, month }, "clearing monthly product selection");
-  await api.internal.monthlyProductSelection.deleteMany({
+  logger.info({ shopId, month }, "clearing monthly collection selection");
+  await api.internal.monthlyCollectionSelection.deleteMany({
     filter: { shopId: { equals: shopId }, month: { equals: month } },
   });
 };

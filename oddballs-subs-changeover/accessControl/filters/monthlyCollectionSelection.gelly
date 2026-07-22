@@ -1,0 +1,3 @@
+filter ($session: Session) on MonthlyCollectionSelection [
+  where shopId == $session.shopId
+]
